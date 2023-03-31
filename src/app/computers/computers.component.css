@@ -1,0 +1,11 @@
+.container{
+    padding: 20px;
+}
+
+.btn-new{
+    margin-bottom: 10px;
+}
+
+.example-spacer{
+    flex: 1 1 auto;
+}

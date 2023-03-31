@@ -1,0 +1,11 @@
+.container{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.container h1{
+    text-align: center;
+}

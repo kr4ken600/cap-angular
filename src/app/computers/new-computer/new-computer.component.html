@@ -1,0 +1,12 @@
+<div class="container" *ngIf="formComputer" [formGroup]="formComputer">
+    <h1>Agregar Articulo</h1>
+    <mat-form-field>
+        <mat-label>Marca</mat-label>
+        <input type="text" matInput formControlName="brand"/>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Modelo</mat-label>
+        <input type="text" matInput formControlName="model"/>
+    </mat-form-field>
+    <button color="primary" mat-raised-button (click)="addComputer()">Guardar</button>
+</div>
