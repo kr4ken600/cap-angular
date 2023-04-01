@@ -31,7 +31,6 @@ export class NewComputerComponent {
       },
       error: (err) => {
         alert('Algo salio mal.');
-        console.error(err);
       },
     });
   }

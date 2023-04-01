@@ -8,7 +8,6 @@ import { UsersComponent } from './users/users.component';
 const routes: Routes = [
   {
     path: 'login',
-    canDeactivate: [AuthService],
     component: LoginComponent,
   },
   {

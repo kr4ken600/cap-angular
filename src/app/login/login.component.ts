@@ -46,7 +46,5 @@ export class LoginComponent {
         this.isLoading = false;
       }
     });
-
-    console.log('Peticion enviada');
   }
 }
