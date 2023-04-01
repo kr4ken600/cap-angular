@@ -8,7 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComputersService } from 'src/app/services/computers.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { NEVER, delay, of, throwError } from 'rxjs';
+import { delay, of, throwError } from 'rxjs';
 import { IComputer } from 'src/app/model/computer.mode';
 
 describe('EditComputerComponent', () => {
@@ -22,18 +22,17 @@ describe('EditComputerComponent', () => {
 
   let activeRouteSpy: ActivatedRoute;
 
-  let routerSpy = jasmine.createSpyObj<Router>('Router', ['navigate']);
-
-  // activeRouteSpy.params = NEVER;
+  let routerSpy:jasmine.SpyObj<Router>
 
   beforeEach(async () => {
+    routerSpy = jasmine.createSpyObj<Router>('Router', ['navigate']);
     await TestBed.configureTestingModule({
       declarations: [EditComputerComponent],
       imports: [
         RouterTestingModule.withRoutes([
           {
             path: 'computers',
-            redirectTo: '',
+            redirectTo: '/'
           },
         ]),
         MatInputModule,

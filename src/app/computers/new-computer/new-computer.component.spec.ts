@@ -55,7 +55,7 @@ describe('NewComputersComponent', () => {
     component.formComputer?.patchValue(mockRequest);
     component.addComputer();
     expect(computerSvcSpy.setComputers).toHaveBeenCalledWith(mockRequest)
-    // expect(routerSpy.navigate).toHaveBeenCalledWith(['computers']);
+    expect(routerSpy.navigate).toHaveBeenCalledWith(['computers']);
   });
 
   it('should addComputer - error', () => {
