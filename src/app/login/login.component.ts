@@ -5,6 +5,11 @@ import { ILoginRequest } from '../model/login.model';
 import { LoginService } from '../services/login.service';
 import { UtilService } from '../services/util.service';
 
+// {
+//   "email": "eve.holt@reqres.in",
+//   "password": "cityslicka"
+// }
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -41,7 +46,5 @@ export class LoginComponent {
         this.isLoading = false;
       }
     });
-
-    console.log('Peticion enviada');
   }
 }
